@@ -11,6 +11,9 @@ CRONTAB_COMMAND="0 5 * * * bash $SCRIPT_DIR/mongodb-aws-backup-script.sh 1> $SCR
 # Set crontab command to crontab
 echo "$CRONTAB_COMMAND" >> "$CRONTAB_FILE"
 
+# Create backup foldor
+mkdir $SCRIPT_DIR/mongo-backups
+
 # Message
 echo "Uploading backup to S3..."
 echo "Added crontab command.."
