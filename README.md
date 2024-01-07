@@ -46,6 +46,7 @@ git clone https://github.com/ibrahimsayar/linux-mongodb-aws-backup-script.git
 # Go script directory
 cd linux-mongodb-aws-backup-script
 
+# If you have completed the steps and variables required 'Before Install' installation, you can run it.
 # Run crontab command
 bash add-backup-time-to-crontab.sh
 
