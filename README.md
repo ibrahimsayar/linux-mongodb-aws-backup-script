@@ -35,7 +35,7 @@ export S3_BUCKET_NAME=s3://bucket-name
 ```
 
 
-### Install
+## Install
 ```bash
 # Go directory
 cd /home
