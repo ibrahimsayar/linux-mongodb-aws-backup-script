@@ -17,7 +17,7 @@ find $backupDir -name "*.tar.gz" -type f -delete
 
 # Backup database
 echo "Backing up database..."
-mongodump --authenticationDatabase admin -u $MONGODB_USERNAME -p $MONGODB_PASSWORD --db $mongodbDatabase --out $backupDir$date
+mongodump --authenticationDatabase admin -u $MONGODB_USERNAME -p $MONGODB_PASSWORD --db $MONGODB_DATABASE --out $backupDir$date
 
 # Compress backup directory
 echo "Compressing backup directory..."
