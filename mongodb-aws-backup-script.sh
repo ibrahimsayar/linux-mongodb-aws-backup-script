@@ -3,7 +3,7 @@ set -e
 
 # Set variables
 date=$(date '+%Y-%m-%d')
-backupDir=/home/mongo-backups/
+backupDir=/home/linux-mongodb-aws-backup-script/mongo-backups/
 
 # Authenticate to MongoDB
 export MONGODB_USERNAME=mongodbDatabaseUser
